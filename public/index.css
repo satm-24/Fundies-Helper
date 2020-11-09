@@ -1,0 +1,80 @@
+body {
+    background: rgb(43,46,74);
+    background: lightgray;
+}
+
+#header {
+    background-color: #903749;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#announcements {
+    text-align: center;
+    background-color: #8d8a8a;
+    margin: 3rem;
+    list-style-position: inside;
+    color: black;
+}
+
+#overview {
+    text-align: center;
+}
+
+#calendar {
+    margin: 2% 20%;
+    padding: 1rem;
+}
+
+#footer {
+    background-color: #903749;
+    text-align: center;
+}
+
+.header-text {
+    color: white;
+    text-align: center;
+}
+
+.navbar-nav li a {
+    color: #e84545;
+}
+
+.announcement-content {
+    width: 10rem;
+    border: solid 0.1rem;
+}
+
+.overview-content {
+    text-align: center;
+    border: solid 0.2rem #e84545;
+    margin: auto;
+    box-shadow: 1px 1px 2px 1px #e84545;
+    width: 40%;
+
+    margin-right: 2rem;
+    display: inline-block;
+}
+
+.overview-piazza {
+    text-align: center;
+    border: solid 0.2rem #e84545;
+    margin: auto;
+    box-shadow: 1px 1px 2px 1px #e84545;
+    width: 40%;
+
+    display: inline-block;
+}
+
+.piazza {
+    list-style-image: url(favicons/faviconPiazza.ico);
+}
+
+.immediate {
+    color: red;
+}
+
+.center {
+   text-align: left;
+    list-style-position: inside;
+}

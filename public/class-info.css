@@ -1,0 +1,30 @@
+.banner {
+    background-color: #cc0000;
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom: 5%;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.grades {
+    text-align: center;
+    font-size: 20;
+    border: solid red;
+    border-width: 5px;
+    width:100%;
+}
+
+.time-location-table {
+    background-color: #fa6984;
+    width: 50%;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace; 
+}
+
+img {
+    width: 10rem;
+    height: 10rem;
+}
