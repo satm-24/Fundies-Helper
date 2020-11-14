@@ -12,13 +12,14 @@ body {
 #announcements {
     text-align: center;
     background-color: #8d8a8a;
-    margin: 3rem;
     list-style-position: inside;
     color: black;
 }
 
 #overview {
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 #calendar {
@@ -28,7 +29,9 @@ body {
 
 #footer {
     background-color: #903749;
-    text-align: center;
+    text-align: left;
+    padding: 2rem;
+    color: #fff;
 }
 
 .header-text {
@@ -36,8 +39,12 @@ body {
     text-align: center;
 }
 
-.navbar-nav li a {
+.navbar-brand, .navbar-nav li .nav-link {
     color: #fdfdfd;
+}
+
+.navbar-brand:hover, .navbar-nav li .nav-link:hover, a.dropdown-item:hover {
+    color: #e84545;
 }
 
 .announcement-content {

@@ -71,7 +71,7 @@ fundies_scrape = pd.read_csv(r'C:\Users\dukyo\Desktop\CS\Fundies Helpers\fundies
 fundies_temp = pd.read_csv(r'C:\Users\dukyo\Desktop\CS\Fundies Helpers\fundies-helper-react\src\scraper\fundies_temp.csv')
 final = pd.concat([fundies_scrape, fundies_temp], axis=1)
 print(final)
-final.to_csv(r'C:\Users\dukyo\Desktop\CS\Fundies Helpers\fundies-helper-react\src\scraper\fundies_scrape.csv')
+final.to_csv(r'C:\Users\dukyo\Desktop\CS\Fundies Helpers\fundies-helper-react\src\scraper\fundies_scrape.csv', index=False)
 
 import os
 os.remove(r'C:\Users\dukyo\Desktop\CS\Fundies Helpers\fundies-helper-react\src\scraper\fundies_temp.csv')

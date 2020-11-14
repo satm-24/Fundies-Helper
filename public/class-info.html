@@ -6,23 +6,72 @@
   <title>Class Information</title>
   <link rel="stylesheet" href="./class-info.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- Bootstrap JS/jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
 </head>
 
-
-<!-- For class info page, Have list of teacher and TA headshots with hyperlinks to emails, add a back and home button,
-maybe add a divider for grade breakdown, try table styles for class times, copyright info and our contact info on footer-->
-
 <body>
-  <div class="banner">
+  <div id="banner">
     <h1> Class Overview </h1>
   </div>
-  <div>
-    <p> This class covers the basics of functional programming and program design using DrRacket. <br>
-  </div>
-  <hr>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-secondary bg-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="favicons/favicon.ico" width="30" height="30" alt="">
+      Fundies I Helper
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="class-info.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class Information</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="class-info.html#class-description">Class Description</a>
+            <a class="dropdown-item" href="class-info.html#syllabus">Syllabus</a>
+            <a class="dropdown-item" href="class-info.html#contact-info">Contact Information</a>
+            <a class="dropdown-item" href="class-info.html#class-times-locations">Class Times/Locations</a>
+            <a class="dropdown-item" href="class-info.html#grade-breakdown">Grade Breakdown</a>
+            <a class="dropdown-item" href="class-info.html#policies">Policies</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="meet-profs.html">Meet your professors!</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="homework.html">Homework / Labs</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Office Hour and Lecture Links</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="lecture-codes.html">Lecture Codes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="important-links.html">Important Links</a>
+        </li>
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+    </div>
+  </nav>
   <div id="class-description">
     <h2> Class Description </h2>
+    <p>This class covers the basics of functional programming and program design using DrRacket.</p>
     <p>This course is an introduction to computing and programming. Its major goal is to introduce students to the
       principles of systematic problem solving through programming and the basic rules of computation.</p>
     <p>By the end of the course, students will have a sense for the differences between a programmer and a well-trained
@@ -34,31 +83,71 @@ maybe add a divider for grade breakdown, try table styles for class times, copyr
       (high school) arithmetic and algebra, and it demands curiosity, self-discipline, and willingness to work with
       others.</p>
   </div>
+  <hr>
   <div id="syllabus">
     <h2> Syllabus </h2>
     <iframe src="img/Syllabus.pdf" height="500" width="70%"></iframe>
-
   </div>
+  <hr>
   <div id="contact-info">
-    <h2> Contact Information </h2>
-    <img src="https://course.ccs.neu.edu/cs2500/lerner_benjamin.png" alt="Ben Lerner" />
-    <a href="mailto:blerner@ccs.neu.edu" target="_blank">Benjamin Lerner</a>
-    <br>
-    <img src="https://course.ccs.neu.edu/cs2500/ahmed_amal.png" alt="Amal Ahmed" />
-    <a href="mailto:amal@ccs.neu.edu" target="_blank">Amal Ahmed</a>
-    <br>
-    <img src="https://vesely.io/images/ferd.jpg" alt="Ferd Vesely" />
-    <a href="mailto:f.vesely@northeastern.edu" target="_blank">Ferd Vesely</a>
-    <br>
-    <img src="https://course.ccs.neu.edu/cs2500/park_john.png" alt="John Park" />
-    <a href="mailto:john.park@northeastern.edu" target="_blank">John Park</a>
-    <br>
-    <img src="https://course.ccs.neu.edu/cs2500/guha_arjun.png" alt="Arjun Guha" />
-    <a href="mailto:a.guha@northeastern.edu" target="_blank">Arjun Guha</a>
+    <h2> Professors and TAs </h2>
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-6">
+        <div class="card" style="width: 11rem;">
+          <img class="card-img-top" src="https://course.ccs.neu.edu/cs2500/lerner_benjamin.png" alt="Ben Lerner">
+          <div class="card-body">
+            <h5 class="card-title">Ben Lerner</h5>
+            <p class="card-text">(Office hour time and location)</p>
+            <a href="mailto:blerner@ccs.neu.edu" class="btn btn-dark" target="_blank">Email Prof. Lerner!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6">
+        <div class="card" style="width: 11rem;">
+          <img class="card-img-top" src="https://course.ccs.neu.edu/cs2500/ahmed_amal.png" alt="Amal Ahmed">
+          <div class="card-body">
+            <h5 class="card-title">Amal Ahmed</h5>
+            <p class="card-text">(Office hour time and location)</p>
+            <a href="mailto:amal@ccs.neu.edu" class="btn btn-dark" target="_blank">Email Prof. Ahmed!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6">
+        <div class="card" style="width: 11rem;">
+          <img class="card-img-top" src="https://vesely.io/images/ferd.jpg" alt="Ferd Vesely">
+          <div class="card-body">
+            <h5 class="card-title">Ferd Vesely</h5>
+            <p class="card-text">(Office hour time and location)</p>
+            <a href="mailto:f.vesely@northeastern.edu" class="btn btn-dark" target="_blank">Email Prof. Vesely!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6">
+        <div class="card" style="width: 11rem;">
+          <img class="card-img-top" src="https://course.ccs.neu.edu/cs2500/park_john.png" alt="John Park">
+          <div class="card-body">
+            <h5 class="card-title">John Park</h5>
+            <p class="card-text">(Office hour time and location)</p>
+            <a href="mailto:john.park@northeastern.edu" class="btn btn-dark" target="_blank">Email Prof. Park!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6">
+        <div class="card" style="width: 11rem;">
+          <img class="card-img-top" src="https://course.ccs.neu.edu/cs2500/guha_arjun.png" alt="Arjun Guha">
+          <div class="card-body">
+            <h5 class="card-title">Arjun Guha</h5>
+            <p class="card-text">(Office hour time and location)</p>
+            <a href="mailto:a.guha@northeastern.edu" class="btn btn-dark" target="_blank">Email Prof. Guha!</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <hr>
   <div id="class-times-locations">
     <h2> Class Times / Locations </h2>
-    <table class="time-location-table">
+    <table id="time-location-table">
       <tr>
         <th>Instructor</th>
         <th>Time</th>
@@ -109,9 +198,10 @@ maybe add a divider for grade breakdown, try table styles for class times, copyr
       </tr>
     </table>
   </div>
+  <hr>
   <div id="grade-breakdown">
     <h2> Grade Breakdown </h2>
-    <table class="grades">
+    <table id="grades">
       <tr>
         <th>Letter Grade</th>
         <th>Numerical Grade</th>
@@ -139,7 +229,14 @@ maybe add a divider for grade breakdown, try table styles for class times, copyr
     </table>
   </div>
   <hr>
-  <p>Footnote</p>
+  <div id="policies">
+    <h2>Policies</h2>
+    <p>If you actually want to read about the course policies, click<a href="https://course.ccs.neu.edu/cs2500/policies.html">here</a></p>
+  </div>
+  <div id="footer">
+    <p>&#169; 2020 Kenny Jung and Satwik Misra</p>
+    <p>This page was last updated on 11/10/2020</p>
+  </div>
 </body>
 
 </html>
