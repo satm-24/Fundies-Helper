@@ -1,22 +1,38 @@
-<!-- testing fork / pull request -->
+<!--
+TODO:
+Add back/home button
+Footer with contact info and add same footer to all pages
+Import Footer react component for each page
+Navbar change color from blue to white or black when clicked
+Automatically update overview section
+Look at similar websites for stylistic inspiration
+
+Ideas:
+Feedback page to get direct feedback from users
+Make the past exams interactive using Bootstrap Modal or Popover    - Bootstrap
+Bootstrap Scrollspy                                                 - Bootstrap
+Filtered calendar                                                   - React?
+Database for Piazza announcements                                   - MongoDB?
+Newsletter with Mailchimp API                                       - Node/Express
+Login system                                                        - Passport.js
+
+Start expanding to other Khoury classes - discrete, fundies 2, logic, etc.
+  Add office hour links tab to the navbar
+  Maybe a different color scheme for each class
+  Page with zoom meeting links for lectures and OH
+Make an app for the website
+Deploy website with heroku
+
+Potential issues:
+Some professors might not want their lecture codes to be public -> create logins?
+
+Really random ideas:
+Space for ppl to share outside projects in BSL/ISL
+Page with past game projects (snake, tetris, etc.)
+-->
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<!--
-Add back/home button
-Class times and locations table - try out different styles (change background color, text color, bold, center, etc.)
-Grade breakdown table - line in middle and reformat (decrease length?)
-Footer with copyright and contact info
-Change text/background color in navbar
-Change "Fundies I Helper" to white and class info dropdown links to match the background color of the navbar (dark gray) and change text color for "Search" from green to white
-Add margin or padding above overview/announcements
-Add new HTML pages for Lecture Codes, Important Links (delete tabs for office hour links and supplemental materials)
-Add same footer to all pages
-
-Favicon
-Change navbar on scroll
-Random bootstrap components
-Make a calendar with toggle/filter-->
 
 <!--Satwik Tasks - Home/back button, navbar colors, table -->
 <head>
@@ -43,26 +59,27 @@ Make a calendar with toggle/filter-->
   <div id="header">
     <h1 class="header-text">Fundies I Helper</h1>
   </div>
-
-  <nav class="navbar navbar-expand-lg navbar-secondary bg-dark">
-    <a class="navbar-brand" href="#">Fundies I Helper</a>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-secondary bg-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="favicons/favicon.ico" width="30" height="30" alt="">
+      Fundies I Helper
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="class-info.html" id="navbarDropdown" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Class Information
-          </a>
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class Information</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="class-info.html#class-description">Class Description</a>
             <a class="dropdown-item" href="class-info.html#syllabus">Syllabus</a>
             <a class="dropdown-item" href="class-info.html#contact-info">Contact Information</a>
             <a class="dropdown-item" href="class-info.html#class-times-locations">Class Times/Locations</a>
             <a class="dropdown-item" href="class-info.html#grade-breakdown">Grade Breakdown</a>
+            <a class="dropdown-item" href="class-info.html#policies">Policies</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="meet-profs.html">Meet your professors!</a>
           </div>
@@ -70,37 +87,36 @@ Make a calendar with toggle/filter-->
         <li class="nav-item active">
           <a class="nav-link" href="homework.html">Homework / Labs</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Office Hour and Lecture Links</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="lecture-codes.html">Lecture Codes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Lecture Codes</a>
+          <a class="nav-link" href="important-links.html">Important Links</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Important Links</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Supplemental Materials</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Shared Projects</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
+      <!-- <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      </form> -->
     </div>
   </nav>
   <section>
-
     <article>
       <div id="overview">
         <div class="overview-content">
-          <h1>Overview</h1>
+          <h2>Overview</h2>
           <p class="immediate">Unit 2 Test 4/20</p>
           <p>Assignment 2 graded</p>
           <p>Prof. Vesely OH 1:30~2:30</p>
         </div>
         <div class="overview-piazza">
-          <h3>Recent Piazza announcements</h3>
+          <h2>Recent Piazza announcements</h2>
           <ol class="center">
             <li class="piazza-one piazza">First Piazza announcement</li>
             <li class="piazza-two piazza">Second Piazza announcement</li>
@@ -116,8 +132,9 @@ Make a calendar with toggle/filter-->
     </article>
   </section>
   <footer>
-    <div>
-      <p id="footer">TODO: Copyright and Contact Info</p>
+    <div id="footer">
+      <p>&#169; 2020 Kenny Jung and Satwik Misra</p>
+      <p>This page was last updated on 11/10/2020</p>
     </div>
   </footer>
   <!-- jQuery -->

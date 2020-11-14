@@ -1,30 +1,101 @@
-.banner {
-    background-color: #cc0000;
-    padding-top: 5%;
-    text-align: center;
-    padding-bottom: 5%;
-    font-size: 20px;
+* {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+body {
     font-family: 'Roboto Mono', monospace;
 }
 
-.grades {
+.navbar {
+    margin: 0 -0.5rem -0.5rem;
+}
+
+.navbar-brand, .navbar-nav li .nav-link {
+    color: #fdfdfd;
+}
+
+.navbar-brand:hover, .navbar-nav li .nav-link:hover, a.dropdown-item:hover {
+    color: #e84545;
+}
+
+.card-img-top {
+    width: 10rem;
+    height: 10rem;
+    margin-left: 0rem;
+}
+
+#class-description {
+    margin-top: 1rem;
+}
+
+#banner {
+    background-color: #903749;
+    padding-top: 4rem;
+    text-align: center;
+    padding-bottom: 4rem;
+    color: #fff;
+    margin: -0.5rem -0.5rem 0 -0.5rem;
+    font-weight: bold;
+}
+
+#time-location-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+#time-location-table td, #time-location-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+#time-location-table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#time-location-table tr:hover {
+    background-color: #ddd;
+}
+
+#time-location-table tr th {
+    text-align: center;
+}
+
+#time-location-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #cc0000;
+    color: white;
+}
+
+#grades {
     text-align: center;
     font-size: 20;
     border: solid red;
     border-width: 5px;
-    width:100%;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+#grades th, #grades td {
+    border-bottom: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+}
+
+#footer {
+    background-color: #903749;
+    text-align: left;
+    padding: 2rem;
+    color: #fff;
+    margin: 0 -0.5rem -0.5rem -0.5rem;
+}
+
+.card {
+    margin: 0.5rem;
 }
 
 .time-location-table {
     background-color: #fa6984;
     width: 50%;
-}
-
-body {
-    font-family: 'Roboto Mono', monospace; 
-}
-
-img {
-    width: 10rem;
-    height: 10rem;
 }
