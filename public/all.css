@@ -1,0 +1,61 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Consolas' !important;
+    font-weight: normal;
+    font-style: normal;
+}
+
+#banner {
+    background-color: #903749;
+    padding-top: 4rem;
+    text-align: center;
+    padding-bottom: 4rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+#content {
+    padding: 1rem;
+}
+
+#footer {
+    background-color: #903749;
+    text-align: left;
+    padding: 2rem;
+    color: #fff;
+}
+
+#scrollTop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #e84545; /* Set a background color */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 15px; /* Increase font size */
+}
+  
+#scrollTop:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.navbar {
+    opacity: 0.85;
+}
+
+.navbar-brand, .navbar-nav li .nav-link {
+    color: #fdfdfd;
+}
+
+.navbar-brand:hover, .navbar-nav li .nav-link:hover, a.dropdown-item:hover {
+    color: #e84545;
+}

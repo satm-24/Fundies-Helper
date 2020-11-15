@@ -1,24 +1,3 @@
-* {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-}
-
-body {
-    font-family: 'Roboto Mono', monospace;
-}
-
-.navbar {
-    margin: 0 -0.5rem -0.5rem;
-}
-
-.navbar-brand, .navbar-nav li .nav-link {
-    color: #fdfdfd;
-}
-
-.navbar-brand:hover, .navbar-nav li .nav-link:hover, a.dropdown-item:hover {
-    color: #e84545;
-}
-
 .card-img-top {
     width: 10rem;
     height: 10rem;
@@ -27,16 +6,6 @@ body {
 
 #class-description {
     margin-top: 1rem;
-}
-
-#banner {
-    background-color: #903749;
-    padding-top: 4rem;
-    text-align: center;
-    padding-bottom: 4rem;
-    color: #fff;
-    margin: -0.5rem -0.5rem 0 -0.5rem;
-    font-weight: bold;
 }
 
 #time-location-table {
@@ -81,14 +50,6 @@ body {
 #grades th, #grades td {
     border-bottom: 2px solid #ddd;
     border-right: 2px solid #ddd;
-}
-
-#footer {
-    background-color: #903749;
-    text-align: left;
-    padding: 2rem;
-    color: #fff;
-    margin: 0 -0.5rem -0.5rem -0.5rem;
 }
 
 .card {

@@ -1,166 +1,331 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Lecture Codes</title>
-    <link rel="stylesheet" href="./lecture-codes.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- Bootstrap JS/jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div id="banner">
-      <h1>Lecture Codes</h1>
-    </div>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-secondary bg-dark">
-      <a class="navbar-brand" href="index.html">
-        <img src="favicons/favicon.ico" width="30" height="30" alt="">
-        Fundies I Helper
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="class-info.html" id="navbarDropdown" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class Information</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="class-info.html#class-description">Class Description</a>
-              <a class="dropdown-item" href="class-info.html#syllabus">Syllabus</a>
-              <a class="dropdown-item" href="class-info.html#contact-info">Contact Information</a>
-              <a class="dropdown-item" href="class-info.html#class-times-locations">Class Times/Locations</a>
-              <a class="dropdown-item" href="class-info.html#grade-breakdown">Grade Breakdown</a>
-              <a class="dropdown-item" href="class-info.html#policies">Policies</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="meet-profs.html">Meet your professors!</a>
-            </div>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="homework.html">Homework / Labs</a>
-          </li>
-          <!-- <li class="nav-item">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lecture Codes</title>
+  <link rel="stylesheet" href="./lecture-codes.css">
+  <link rel="stylesheet" href="./all.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- Bootstrap JS/jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="banner">
+    <h1>Lecture Codes</h1>
+  </div>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-secondary bg-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="favicons/favicon.ico" width="30" height="30" alt="">
+      Fundies I Helper
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="class-info.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class Information</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item btn-outline-light" href="class-info.html#class-description">Class Description</a>
+            <a class="dropdown-item btn-outline-light" href="class-info.html#syllabus">Syllabus</a>
+            <a class="dropdown-item btn-outline-light" href="class-info.html#contact-info">Contact Information</a>
+            <a class="dropdown-item btn-outline-light" href="class-info.html#class-times-locations">Class Times/Locations</a>
+            <a class="dropdown-item btn-outline-light" href="class-info.html#grade-breakdown">Grade Breakdown</a>
+            <a class="dropdown-item btn-outline-light" href="class-info.html#policies">Policies</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item btn-outline-light" href="meet-profs.html">Meet your professors!</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="homework.html">Homework/Labs</a>
+        </li>
+        <!-- <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Office Hour and Lecture Links</a>
           </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="lecture-codes.html">Lecture Codes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="important-links.html">Important Links</a>
-          </li>
-        </ul>
-        <!-- <form class="form-inline my-2 my-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="lecture-codes.html">Lecture Codes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="important-links.html">Important Links</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="past-exams.html">Past Exams</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form> -->
-      </div>
-    </nav>
-    <div class="accordion" id="accordionExample">
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Ben Lerner
-            </button>
-          </h2>
-        </div>
-        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <div class="card-body">
-            <p><a href="../src/lecture-codes/lerner/9_9">September 9</a> - 1. Why CS; Arithmetic of numbers, strings, images; Administrivia</p>
-            <p><a href="../src/lecture-codes/lerner/9_10">September 10</a> - 2. Defining constants, functions; Simple animations</p>
-            <p><a href="../src/lecture-codes/lerner/9_14">September 14</a> - 3. Booleans, conditionals, tests</p>
-            <p><a href="../src/lecture-codes/lerner/9_16">September 16</a> - 4. The Design Recipe</p>
-            <p><a href="../src/lecture-codes/lerner/9_17">September 17</a> - 5. World Programs</p>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Amal Ahmed
-            </button>
-          </h2>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-          <div class="card-body">
-            <p><a href="../src/lecture-codes/ahmed/9_9">September 9</a> - 1. Why CS; Arithmetic of numbers, strings, images; Administrivia</p>
-            <p><a href="../src/lecture-codes/ahmed/9_10">September 10</a> - 2. Defining constants, functions; Simple animations</p>
-            <p><a href="../src/lecture-codes/ahmed/9_14">September 14</a> - 3. Booleans, conditionals, tests</p>
-            <p><a href="../src/lecture-codes/ahmed/9_16">September 16</a> - 4. The Design Recipe</p>
-            <p><a href="../src/lecture-codes/ahmed/9_17">September 17</a> - 5. World Programs</p>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingThree">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Ferd Vesely
-            </button>
-          </h2>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-          <div class="card-body">
-            <p><a href="../src/lecture-codes/vesely/9_9">September 9</a> - 1. Why CS; Arithmetic of numbers, strings, images; Administrivia</p>
-            <p><a href="../src/lecture-codes/vesely/9_10">September 10</a> - 2. Defining constants, functions; Simple animations</p>
-            <p><a href="../src/lecture-codes/vesely/9_14">September 14</a> - 3. Booleans, conditionals, tests</p>
-            <p><a href="../src/lecture-codes/vesely/9_16">September 16</a> - 4. The Design Recipe</p>
-            <p><a href="../src/lecture-codes/vesely/9_17">September 17</a> - 5. World Programs</p>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingFour">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-              John Park
-            </button>
-          </h2>
-        </div>
-        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-          <div class="card-body">
-            <p><a href="../src/lecture-codes/park/9_9">September 9</a> - 1. Why CS; Arithmetic of numbers, strings, images; Administrivia</p>
-            <p><a href="../src/lecture-codes/park/9_10">September 10</a> - 2. Defining constants, functions; Simple animations</p>
-            <p><a href="../src/lecture-codes/park/9_14">September 14</a> - 3. Booleans, conditionals, tests</p>
-            <p><a href="../src/lecture-codes/park/9_16">September 16</a> - 4. The Design Recipe</p>
-            <p><a href="../src/lecture-codes/park/9_17">September 17</a> - 5. World Programs</p>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="heading">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-              Arjun Guha
-            </button>
-          </h2>
-        </div>
-        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-          <div class="card-body">
-            <p><a href="../src/lecture-codes/guha/9_9">September 9</a> - 1. Why CS; Arithmetic of numbers, strings, images; Administrivia</p>
-            <p><a href="../src/lecture-codes/guha/9_10">September 10</a> - 2. Defining constants, functions; Simple animations</p>
-            <p><a href="../src/lecture-codes/guha/9_14">September 14</a> - 3. Booleans, conditionals, tests</p>
-            <p><a href="../src/lecture-codes/guha/9_16">September 16</a> - 4. The Design Recipe</p>
-            <p><a href="../src/lecture-codes/guha/9_17">September 17</a> - 5. World Programs</p>
-          </div>
-        </div>
+    </div>
+  </nav>
+  <ul class="nav nav-pills nav-justified bg-dark" id="lecture-codes" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active btn-dark btn-outline-light" id="lerner-tab" data-toggle="pill" href="#lerner" role="tab" aria-controls="lerner" aria-selected="true" aria-controls="pills-profile" aria-selected="false">Ben Lerner</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link btn-dark btn-outline-light" id="ahmed-tab" data-toggle="pill" href="#ahmed" role="tab" aria-controls="pills-home" aria-selected="true" aria-controls="pills-profile" aria-selected="false">Amal Ahmed</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link btn-dark btn-outline-light" id="vesely-tab" data-toggle="pill" href="#vesely" role="tab" aria-controls="pills-home" aria-selected="true" aria-controls="pills-profile" aria-selected="false">Ferd Vesely</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link btn-dark btn-outline-light" id="park-tab" data-toggle="pill" href="#park" role="tab" aria-controls="pills-home" aria-selected="true" aria-controls="pills-profile" aria-selected="false">John Park</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link btn-dark btn-outline-light" id="guha-tab" data-toggle="pill" href="#guha" role="tab" aria-controls="pills-home" aria-selected="true" aria-controls="pills-profile" aria-selected="false">Arjun Guha</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="lerner" role="tabpanel" aria-labelledby="lerner-tab">
+      <div class="card-body">
+        <p><span class="not-found">9/9</span> - 1. Why CS; Arithmetic of numbers, strings, images; Administrivia</p>
+        <p><a href="../src/lecture-codes/lerner/9-10.rkt">9/10</a> - 2. Defining constants, functions; Simple
+          animations</p>
+        <p><span class="not-found">9/14</span> - 3. Booleans, conditionals, tests</p>
+        <p><a href="../src/lecture-codes/lerner/9-16.rkt">9/16</a> - 4. The Design Recipe</p>
+        <p><a href="../src/lecture-codes/lerner/9-17.rkt">9/17</a> - 5. World Programs</p>
+        <p><a href="../src/lecture-codes/lerner/9-21.rkt">9/21</a> - 6. Structure Type Definitions</p>
+        <p><a href="../src/lecture-codes/lerner/9-23.rkt">9/23</a> - 7. Custom Structures</p>
+        <p><a href="../src/lecture-codes/lerner/9-24.rkt">9/24</a> - 8. Practice With Structures</p>
+        <p><a href="../src/lecture-codes/lerner/9-28.rkt">9/28</a> - 9. Union Data</p>
+        <p><a href="../src/lecture-codes/lerner/9-30.rkt">9/30</a> - 10. Transition from Fixed-Size to Arbitrarily
+          Large Data</p>
+        <p><a href="../src/lecture-codes/lerner/10-1.rkt">10/1</a> - 11. Self-Referential Data Definitions</p>
+        <p>10/5 <a href="../src/lecture-codes/lerner/10-5-bullseye.rkt">Bullseye</a>,
+          <a href="../src/lecture-codes/lerner/10-5-funlab.rkt">Funlab</a> - 12. Lists and Designing Functions on
+          Lists</p>
+        <p><a href="../src/lecture-codes/lerner/10-7.rkt">10/7</a> - 13. Lists of Structures</p>
+        <p><a href="../src/lecture-codes/lerner/10-8.rkt">10/8</a> - 14. Practice with Lists</p>
+        <p><span class="not-found">10/14</span> - 15. Project Discussion, Exam Review</p>
+        <p><a href="../src/lecture-codes/lerner/snake-full.rkt">10/15</a> - 16. Similarities in Functions</p>
+        <p><span class="not-found">10/19</span> - 17. Abstractions</p>
+        <p><a href="../src/lecture-codes/lerner/10-21.rkt">10/21</a> - 18. DrRacket-provided Abstractions</p>
+        <p><a href="../src/lecture-codes/lerner/10-22.rkt">10/22</a> - 19. More DrRacket-provided Abstractions</p>
+        <p><a href="../src/lecture-codes/lerner/10-26.rkt">10/26</a> - 20. Scope and Local</p>
+        <p><span class="not-found">10/28</span> - 21. Design Recipe for Abstractions</p>
+        <p><span class="not-found">10/29</span> - 22. Lambda</p>
+        <p>11/2 <a href="../src/lecture-codes/lerner/11-2.1.rkt">Part 1</a>,
+          <a href="../src/lecture-codes/lerner/11-2.2.rkt">Part 2</a> - 23. Practice with Abstractions, Sets as Lists
+        </p>
+        <p><a href="../src/lecture-codes/lerner/11-4.rkt">11/4</a> - 24. Practice with Lambda, Sets as Functions</p>
+        <p><a href="../src/lecture-codes/lerner/11-5.rkt">11/5</a> - 25. Trees</p>
+        <p>11/9 <a href="../src/lecture-codes/lerner/11-9.1.rkt">Part 1</a>,
+          <a href="../src/lecture-codes/lerner/11-9.2.rkt">Part 2</a> - 26. Binary Trees</p>
+        <p>11/12 <a href="../src/lecture-codes/lerner/11-12.1.rkt">Part 1</a>,
+          <a href="../src/lecture-codes/lerner/11-12.2.rkt">Part 2</a> - 27. More Trees</p>
+        <p>11/16 - 28. Mutually Recursive Data</p>
+        <p>11/18 - 29. Multiple Complex Inputs</p>
+        <p>11/19 - 30. Practice with Multiple Complex Inputs</p>
+        <p>11/23 - 31. Graphs</p>
+        <p>11/30 - 32. Graphs and Accumulators</p>
+        <p>12/2 - 33. Generative Recursion</p>
+        <p>12/3 - 34. More Generative Recursion</p>
+        <p>12/7 - 35. Accumulators</p>
+        <p>12/9 - 36. Practice with Accumulators, Wrap-Up</p>
       </div>
     </div>
-    <div id="footer">
-      <p>&#169; 2020 Kenny Jung and Satwik Misra</p>
-      <p>This page was last updated on 11/10/2020</p>
+    <div class="tab-pane fade" id="ahmed" role="tabpanel" aria-labelledby="ahmed-tab">
+      <div class="card-body">
+        <p><span class="not-found">9/9</span> - 1. Why CS; Arithmetic of numbers, strings, images; Administrivia</p>
+        <p><span class="not-found">9/10</span> - 2. Defining constants, functions; Simple animations</p>
+        <p><span class="not-found">9/14</span> - 3. Booleans, conditionals, tests</p>
+        <p><span class="not-found">9/16</span> - 4. The Design Recipe</p>
+        <p><span class="not-found">9/17</span> - 5. World Programs</p>
+        <p><span class="not-found">9/21</span> - 6. Structure Type Definitions</p>
+        <p><a href="../src/lecture-codes/ahmed/9-23.rkt">9/23</a> - 7. Custom Structures</p>
+        <p><a href="../src/lecture-codes/ahmed/9-24.rkt">9/24</a> - 8. Practice With Structures</p>
+        <p><a href="../src/lecture-codes/ahmed/9-28.rkt">9/28</a> - 9. Union Data</p>
+        <p><a href="../src/lecture-codes/ahmed/9-30.rkt">9/30</a> - 10. Transition from Fixed-Size to Arbitrarily
+          Large Data</p>
+        <p><a href="../src/lecture-codes/ahmed/10-1.rkt">10/1</a> - 11. Self-Referential Data Definitions</p>
+        <p><a href="../src/lecture-codes/ahmed/10-5.rkt">10/5</a> - 12. Lists and Designing Functions on Lists</p>
+        <p><a href="../src/lecture-codes/ahmed/10-7.rkt">10/7</a> - 13. Lists of Structures</p>
+        <p><a href="../src/lecture-codes/ahmed/10-8.rkt">10/8</a> - 14. Practice with Lists</p>
+        <p><a href="../src/lecture-codes/ahmed/10-14.rkt">10/14</a> - 15. Project Discussion, Exam Review</p>
+        <p><a href="../src/lecture-codes/ahmed/snake-full.rkt">10/15</a> - 16. Similarities in Functions</p>
+        <p><span class="not-found">10/19</span> - 17. Abstractions</p>
+        <p><span class="not-found">10/21</span> - 18. DrRacket-provided Abstractions</p>
+        <p><a href="../src/lecture-codes/ahmed/10-22.rkt">10/22</a> - 19. More DrRacket-provided Abstractions</p>
+        <p><a href="../src/lecture-codes/ahmed/10-26.rkt">10/26</a> - 20. Scope and Local</p>
+        <p><span class="not-found">10/28</span> - 21. Design Recipe for Abstractions</p>
+        <p><a href="../src/lecture-codes/ahmed/10-29.rkt">10/29</a> - 22. Lambda</p>
+        <p><a href="../src/lecture-codes/ahmed/11-2.rkt">11/2</a> - 23. Practice with Abstractions, Sets as Lists</p>
+        <p>11/4 <a href="../src/lecture-codes/ahmed/11-4.1.rkt">Part 1</a>,
+          <a href="../src/lecture-codes/ahmed/11-4.2.rkt">Part 2</a> - 24. Practice with Lambda, Sets as Functions</p>
+        <p><a href="../src/lecture-codes/ahmed/11-5.rkt">11/5</a> - 25. Trees</p>
+        <p>11/9 <a href="../src/lecture-codes/ahmed/11-9.1.rkt">Part 1</a>,
+          <a href="../src/lecture-codes/ahmed/11-9.2.rkt">Part 2</a> - 26. Binary Trees</p>
+        <p>11/12 <a href="../src/lecture-codes/ahmed/11-12.1.rkt">Part 1</a>,
+          <a href="../src/lecture-codes/ahmed/11-12.2.rkt">Part 2</a> - 27. More Trees</p>
+        <p>11/16 - 28. Mutually Recursive Data</p>
+        <p>11/18 - 29. Multiple Complex Inputs</p>
+        <p>11/19 - 30. Practice with Multiple Complex Inputs</p>
+        <p>11/23 - 31. Graphs</p>
+        <p>11/30 - 32. Graphs and Accumulators</p>
+        <p>12/2 - 33. Generative Recursion</p>
+        <p>12/3 - 34. More Generative Recursion</p>
+        <p>12/7 - 35. Accumulators</p>
+        <p>12/9 - 36. Practice with Accumulators, Wrap-Up</p>
+      </div>
     </div>
-  </body>
+    <div class="tab-pane fade" id="vesely" role="tabpanel" aria-labelledby="vesely-tab">
+      <div class="card-body">
+        <p>9/9 - 1. Why CS; Arithmetic of numbers, strings, images; Administrivia</p>
+        <p>9/10 - 2. Defining constants, functions; Simple animations</p>
+        <p>9/14 - 3. Booleans, conditionals, tests</p>
+        <p>9/16 - 4. The Design Recipe</p>
+        <p>9/17 - 5. World Programs</p>
+        <p>9/21 - 6. Structure Type Definitions</p>
+        <p>9/23 - 7. Custom Structures</p>
+        <p>9/24 - 8. Practice With Structures</p>
+        <p>9/28 - 9. Union Data</p>
+        <p>9/30 - 10. Transition from Fixed-Size to Arbitrarily Large Data</p>
+        <p>10/1 - 11. Self-Referential Data Definitions</p>
+        <p>10/5 - 12. Lists and Designing Functions on Lists</p>
+        <p>10/7 - 13. Lists of Structures</p>
+        <p>10/8 - 14. Practice with Lists</p>
+        <p>10/14 - 15. Project Discussion, Exam Review</p>
+        <p>10/15 - 16. Similarities in Functions</p>
+        <p>10/19 - 17. Abstractions</p>
+        <p>10/21 - 18. DrRacket-provided Abstractions</p>
+        <p>10/22 - 19. More DrRacket-provided Abstractions</p>
+        <p>10/26 - 20. Scope and Local</p>
+        <p>10/28 - 21. Design Recipe for Abstractions</p>
+        <p>10/29 - 22. Lambda</p>
+        <p>11/2 - 23. Practice with Abstractions, Sets as Lists</p>
+        <p>11/4 - 24. Practice with Lambda, Sets as Functions</p>
+        <p>11/5 - 25. Trees</p>
+        <p>11/9 - 26. Binary Trees</p>
+        <p>11/12 - 27. More Trees</p>
+        <p>11/16 - 28. Mutually Recursive Data</p>
+        <p>11/18 - 29. Multiple Complex Inputs</p>
+        <p>11/19 - 30. Practice with Multiple Complex Inputs</p>
+        <p>11/23 - 31. Graphs</p>
+        <p>11/30 - 32. Graphs and Accumulators</p>
+        <p>12/2 - 33. Generative Recursion</p>
+        <p>12/3 - 34. More Generative Recursion</p>
+        <p>12/7 - 35. Accumulators</p>
+        <p>12/9 - 36. Practice with Accumulators, Wrap-Up</p>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="park" role="tabpanel" aria-labelledby="park-tab">
+      <div class="card-body">
+        <p><span class="not-found">9/9</span> - 1. Why CS; Arithmetic of numbers, strings, images; Administrivia</p>
+        <p><span class="not-found">9/10</span> - 2. Defining constants, functions; Simple animations</p>
+        <p><span class="not-found">9/14</span> - 3. Booleans, conditionals, tests</p>
+        <p><span class="not-found">9/16</span> - 4. The Design Recipe</p>
+        <p><span class="not-found">9/17</span> - 5. World Programs</p>
+        <p><span class="not-found">9/21</span> - 6. Structure Type Definitions</p>
+        <p><span class="not-found">9/23</span> - 7. Custom Structures</p>
+        <p><a href="../src/lecture-codes/park/9-24.rkt">9/24</a> - 8. Practice With Structures</p>
+        <p>9/28 <a href="../src/lecture-codes/park/9-28.1.rkt">Part 1</a>,
+          <a href="../src/lecture-codes/park/9-28.2.rkt">Part 2</a> - 9. Union Data</p>
+        <p>9/30 <a href="../src/lecture-codes/park/9-30.1.rkt">Part 1</a>,
+          <a href="../src/lecture-codes/park/9-30.2.rkt">Part 2</a> - 10. Transition from Fixed-Size to Arbitrarily Large
+          Data</p>
+        <p>10/1 <a href="../src/lecture-codes/park/10-1.1.rkt">Part 1</a>,
+          <a href="../src/lecture-codes/park/10-1.2.rkt">Part 2</a> - 11. Self-Referential Data Definitions</p>
+        <p><a href="../src/lecture-codes/park/10-5.rkt">10/5</a> - 12. Lists and Designing Functions on Lists</p>
+        <p>10/7 <a href="../src/lecture-codes/park/10-7.1.rkt">Part 1</a>,
+          <a href="../src/lecture-codes/park/10-7.2.rkt">Part 2</a>,
+          <a href="../src/lecture-codes/park/10-7.3.rkt">Part 3</a> - 13. Lists of Structures</p>
+        <p><a href="../src/lecture-codes/park/10-8.rkt">10/8</a> - 14. Practice with Lists</p>
+        <p><a href="../src/lecture-codes/park/10-14.rkt">10/14</a> - 15. Project Discussion, Exam Review</p>
+        <p><a href="../src/lecture-codes/park/10-15.rkt">10/15</a> - 16. Similarities in Functions</p>
+        <p>10/19 <a href="../src/lecture-codes/park/10-19.1.rkt">Part 1</a>,
+          <a href="../src/lecture-codes/park/10-19.2.rkt">Part 2</a> - 17. Abstractions</p>
+        <p>10/21 <a href="../src/lecture-codes/park/10-21.1.rkt">Part 1</a>,
+          <a href="../src/lecture-codes/park/10-21.2.rkt">Part 2</a> - 18. DrRacket-provided Abstractions</p>
+        <p><a href="../src/lecture-codes/park/10-22.rkt">10/22</a> - 19. More DrRacket-provided Abstractions</p>
+        <p><a href="../src/lecture-codes/park/10-26.rkt">10/26</a> - 20. Scope and Local</p>
+        <p><a href="../src/lecture-codes/park/10-28.rkt">10/28</a> - 21. Design Recipe for Abstractions</p>
+        <p><a href="../src/lecture-codes/park/10-29.rkt">10/29</a> - 22. Lambda</p>
+        <p><a href="../src/lecture-codes/park/11-2.rkt">11/2</a> - 23. Practice with Abstractions, Sets as Lists</p>
+        <p><a href="../src/lecture-codes/park/11-4.rkt">11/4</a> - 24. Practice with Lambda, Sets as Functions</p>
+        <p><a href="../src/lecture-codes/park/11-5.rkt">11/5</a> - 25. Trees</p>
+        <p>11/9 <a href="../src/lecture-codes/park/11-9.1.rkt">Part 1</a>,
+          <a href="../src/lecture-codes/park/11-9.2.rkt">Part 2</a>,
+          <a href="../src/lecture-codes/park/11-9.3.rkt">Part 3</a> - 26. Binary Trees</p>
+        <p><span class="not-found">11/12</span> - 27. More Trees</p>
+        <p>11/16 - 28. Mutually Recursive Data</p>
+        <p>11/18 - 29. Multiple Complex Inputs</p>
+        <p>11/19 - 30. Practice with Multiple Complex Inputs</p>
+        <p>11/23 - 31. Graphs</p>
+        <p>11/30 - 32. Graphs and Accumulators</p>
+        <p>12/2 - 33. Generative Recursion</p>
+        <p>12/3 - 34. More Generative Recursion</p>
+        <p>12/7 - 35. Accumulators</p>
+        <p>12/9 - 36. Practice with Accumulators, Wrap-Up</p>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="guha" role="tabpanel" aria-labelledby="guha-tab">
+      <div class="card-body">
+        <p>9/9 - 1. Why CS; Arithmetic of numbers, strings, images; Administrivia</p>
+        <p>9/10 - 2. Defining constants, functions; Simple animations</p>
+        <p>9/14 - 3. Booleans, conditionals, tests</p>
+        <p>9/16 - 4. The Design Recipe</p>
+        <p>9/17 - 5. World Programs</p>
+        <p>9/21 - 6. Structure Type Definitions</p>
+        <p>9/23 - 7. Custom Structures</p>
+        <p>9/24 - 8. Practice With Structures</p>
+        <p>9/28 - 9. Union Data</p>
+        <p>9/30 - 10. Transition from Fixed-Size to Arbitrarily Large Data</p>
+        <p>10/1 - 11. Self-Referential Data Definitions</p>
+        <p>10/5 - 12. Lists and Designing Functions on Lists</p>
+        <p>10/7 - 13. Lists of Structures</p>
+        <p>10/8 - 14. Practice with Lists</p>
+        <p>10/14 - 15. Project Discussion, Exam Review</p>
+        <p>10/15 - 16. Similarities in Functions</p>
+        <p>10/19 - 17. Abstractions</p>
+        <p>10/21 - 18. DrRacket-provided Abstractions</p>
+        <p>10/22 - 19. More DrRacket-provided Abstractions</p>
+        <p>10/26 - 20. Scope and Local</p>
+        <p>10/28 - 21. Design Recipe for Abstractions</p>
+        <p>10/29 - 22. Lambda</p>
+        <p>11/2 - 23. Practice with Abstractions, Sets as Lists</p>
+        <p>11/4 - 24. Practice with Lambda, Sets as Functions</p>
+        <p>11/5 - 25. Trees</p>
+        <p>11/9 - 26. Binary Trees</p>
+        <p>11/12 - 27. More Trees</p>
+        <p>11/16 - 28. Mutually Recursive Data</p>
+        <p>11/18 - 29. Multiple Complex Inputs</p>
+        <p>11/19 - 30. Practice with Multiple Complex Inputs</p>
+        <p>11/23 - 31. Graphs</p>
+        <p>11/30 - 32. Graphs and Accumulators</p>
+        <p>12/2 - 33. Generative Recursion</p>
+        <p>12/3 - 34. More Generative Recursion</p>
+        <p>12/7 - 35. Accumulators</p>
+        <p>12/9 - 36. Practice with Accumulators, Wrap-Up</p>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <p>&#169; 2020 Kenny Jung and Satwik Misra</p>
+    <script type="text/javascript">
+      var m = "This page was last updated on " + document.lastModified;
+      var p = m.length - 8;
+      document.writeln("<left>");
+      document.write(m.substring(p, 0));
+      document.writeln("</left>");
+    </script>
+  </div>
+</body>
+
 </html>

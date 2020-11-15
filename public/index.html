@@ -1,9 +1,13 @@
 <!--
 TODO:
-Add back/home button
 Footer with contact info and add same footer to all pages
 Import Footer react component for each page
-Navbar change color from blue to white or black when clicked
+How to actually get the search bar to work
+How to make filtered calendar
+Change font - consolas and monospace
+*Add all rkt files to .gitignore
+Feedback with bootstrap modal
+Newsletter page
 Automatically update overview section
 Look at similar websites for stylistic inspiration
 
@@ -34,9 +38,9 @@ Page with past game projects (snake, tetris, etc.)
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<!--Satwik Tasks - Home/back button, navbar colors, table -->
 <head>
   <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./all.css">
   <meta charset="utf-8">
   <title>Fundies I Helper</title>
   <!-- <base href="/src/"> -->
@@ -74,18 +78,19 @@ Page with past game projects (snake, tetris, etc.)
           <a class="nav-link dropdown-toggle" href="class-info.html" id="navbarDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class Information</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="class-info.html#class-description">Class Description</a>
-            <a class="dropdown-item" href="class-info.html#syllabus">Syllabus</a>
-            <a class="dropdown-item" href="class-info.html#contact-info">Contact Information</a>
-            <a class="dropdown-item" href="class-info.html#class-times-locations">Class Times/Locations</a>
-            <a class="dropdown-item" href="class-info.html#grade-breakdown">Grade Breakdown</a>
-            <a class="dropdown-item" href="class-info.html#policies">Policies</a>
+            <a class="dropdown-item btn-outline-light" href="class-info.html#class-description">Class Description</a>
+            <a class="dropdown-item btn-outline-light" href="class-info.html#syllabus">Syllabus</a>
+            <a class="dropdown-item btn-outline-light" href="class-info.html#contact-info">Contact Information</a>
+            <a class="dropdown-item btn-outline-light" href="class-info.html#class-times-locations">Class
+              Times/Locations</a>
+            <a class="dropdown-item btn-outline-light" href="class-info.html#grade-breakdown">Grade Breakdown</a>
+            <a class="dropdown-item btn-outline-light" href="class-info.html#policies">Policies</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="meet-profs.html">Meet your professors!</a>
           </div>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="homework.html">Homework / Labs</a>
+          <a class="nav-link" href="homework.html">Homework/Labs</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Office Hour and Lecture Links</a>
@@ -97,7 +102,10 @@ Page with past game projects (snake, tetris, etc.)
           <a class="nav-link" href="important-links.html">Important Links</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Shared Projects</a>
+          <a class="nav-link" href="past-exams.html">Past Exams</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
         </li>
       </ul>
       <!-- <form class="form-inline my-2 my-lg-0">
@@ -128,13 +136,52 @@ Page with past game projects (snake, tetris, etc.)
       </div>
     </article>
     <article>
-      <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23D50000&amp;ctz=America%2FNew_York&amp;showNav=1&amp;showPrint=0&amp;showTabs=1&amp;src=YmJiNjdqdHJia3VyNG5hMjVqMG5mdTE0N3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23EF6C00&amp;showCalendars=0&amp;showDate=1" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no" id="calendar"></iframe>
+      <iframe
+        src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23D50000&amp;ctz=America%2FNew_York&amp;showNav=1&amp;showPrint=0&amp;showTabs=1&amp;src=YmJiNjdqdHJia3VyNG5hMjVqMG5mdTE0N3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23EF6C00&amp;showCalendars=0&amp;showDate=1"
+        style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no" id="calendar"></iframe>
     </article>
   </section>
+
+  <!-- Begin Mailchimp Signup Form -->
+  <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    #mc_embed_signup {
+      background: #fff;
+      border: 0.1rem dashed #903749;
+      margin: 1rem;
+      width: 60%;
+    }
+    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>
+  <div id="mc_embed_signup">
+    <a href="https://us17.list-manage.com/survey?u=6205535f1f008c3a57a0534f6&id=edc546d665" target="_blank">Link to feedback form!</a>
+    <form action="https://naver.us17.list-manage.com/subscribe/post?u=6205535f1f008c3a57a0534f6&amp;id=ae5b8bfec6"
+      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+      novalidate>
+      <div id="mc_embed_signup_scroll">
+        <label for="feedback">Feedback!</label>
+        <p>What can we improve on?</p>
+        <input type="text" value="" name="EMAIL" class="email" id="feedback" placeholder="Any feedback would be greatly appreciated! ... NOTE: DOESN'T ACTUALLY WORK ATM lol" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+            name="b_6205535f1f008c3a57a0534f6_ae5b8bfec6" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Submit feedback!" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      </div>
+    </form>
+  </div>
+  <!--End mc_embed_signup-->
+
   <footer>
     <div id="footer">
       <p>&#169; 2020 Kenny Jung and Satwik Misra</p>
-      <p>This page was last updated on 11/10/2020</p>
+      <script type="text/javascript">
+        var m = "This page was last updated on " + document.lastModified;
+        var p = m.length - 8;
+        document.writeln("<left>");
+        document.write(m.substring(p, 0));
+        document.writeln("</left>");
+      </script>
     </div>
   </footer>
   <!-- jQuery -->
