@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Past Exams</title>
+    <link rel="stylesheet" href="./homework.css">
+    <link rel="stylesheet" href="./all.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Bootstrap JS/jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="banner">
+        <h1>Interactive Exams</h1>
+    </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-secondary bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="favicons/favicon.ico" width="30" height="30" alt="">
+            Fundies I Helper
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="class-info.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class Information</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item btn-outline-light" href="class-info.html#class-description">Class Description</a>
+                        <a class="dropdown-item btn-outline-light" href="class-info.html#syllabus">Syllabus</a>
+                        <a class="dropdown-item btn-outline-light" href="class-info.html#contact-info">Contact Information</a>
+                        <a class="dropdown-item btn-outline-light" href="class-info.html#class-times-locations">Class Times/Locations</a>
+                        <a class="dropdown-item btn-outline-light" href="class-info.html#grade-breakdown">Grade Breakdown</a>
+                        <a class="dropdown-item btn-outline-light" href="class-info.html#policies">Policies</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item btn-outline-light" href="meet-profs.html">Meet your professors!</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="homework.html">Homework/Labs</a>
+                </li>
+                <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Office Hour and Lecture Links</a>
+        </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="lecture-codes.html">Lecture Codes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="important-links.html">Important Links</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="past-exams.html">Past Exams</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+        </div>
+    </nav>
+    <div id="content">
+        <div>
+            <h2>2017 Exam 1</h2>
+            <p>For a PDF link, click <a href="https://course.ccs.neu.edu/cs2500/2017-exam1.pdf" target="_blank">here</a></p>
+            <div>
+                <p><strong>Problem 1</strong>. Suppose you ran the program below in DrRacket. What would the output
+                    be? For partial credit (in case you produce the wrong output), explain your work.</p>
+                <pre><code>(define-struct answer [to the question])</code></pre>
+                <pre><code>(define EX1
+      (make-answer "Lois" 42 (string=? "CS2500"
+                                       (string-append "2500" "CS"))))</code></pre>
+                <pre><code>(define EX2
+      (make-answer "Clark" 654 #false))</code></pre>
+                <pre><code>(define (check-it ans)
+      (cond
+        [(> (answer-the ans) 50)     (answer-to ans)]
+        [(not (answer-question ans)) "Greetings"]
+        [else                        (string-append "Hello, "
+                                                    (answer-to ans))]))</code></pre>
+                <pre><code>(check-it EX1)</code></pre>
+                <textarea name="message" rows="10" cols="100"
+                    placeholder="Write your answer here first before looking at the answers!"></textarea>
+                <br>
+                <a tabindex="0" class="btn btn-md btn-dark" role="button" data-toggle="popover" data-trigger="focus"
+                    title="SAMPLE response" data-content='tl;dr String "Greetings" is the output.
+                    The check-it function takes in EX1 with the answer struct where _to_ equals "Lois", _the_ equals 42, and _question_ equals the string=?
+                    expression. Within the check-it function itself, the first condition is false because 42 is less than 50 and the second condition is true
+                    because even though "CS2500" and "2500CS" are not the same, the #false boolean value for (answer-question ans) is negated by the _not_ to
+                    make it true. Therefore, the String "Greetings" is returned.'>Sample Response</a>
+            </div>
+            <hr>
+            <div>
+                <p><strong>Problem 2</strong>. Take a look at this data definition:</p>
+                <pre><code>(define-struct sling [shot])</code></pre>
+                <pre><code>(define-struct high [land tops])</code></pre>
+                <pre><code style="color:orange;">; A Singer is one of:
+    ; - (make-sling Boolean)
+    ; - (make-high Number String)
+    ; - #false
+    ; Intepretation not needed for this problem</code></pre>
+                <p>Provide three completely distinct data examples for Singer.</p>
+                <textarea name="message" rows="10" cols="100"
+                    placeholder="Write your answer here first before looking at the answers!"></textarea>
+                <br>
+                <a tabindex="0" class="btn btn-md btn-dark" role="button" data-toggle="popover" data-trigger="focus"
+                    title="SAMPLE response"
+                    data-content='(define singer-1 (make-sling #true))
+                    (define singer-2 (make-high 2 "hello"))
+                    (define singer-3 #false)'>Sample Response</a>
+            </div>
+            <hr>
+            <div>
+                <p><strong>Problem 3</strong>. Here are definitions:</p>
+                <pre><code>(define-struct image-tweet [message picture])</code></pre>
+                <pre><code>(define-struct retweet [other-tweet])</code></pre>
+                <pre><code style="color:orange;">; A Tweet is one of:
+    ; - String
+    ; - (make-image-tweet String Image)
+    ; - (make-retweet String)
+    ; Interpretation: Represents a tweet, which is either a message (String),
+    ; a message along with a picture (make-image-tweet), or a retweet of
+    ; another message (make-retweet)</code></pre>
+                <p>Develop the template(s) for any data definition(s) you see here.</p>
+                <textarea name="message" rows="10" cols="100"
+                    placeholder="Write your answer here first before looking at the answers!"></textarea>
+                <br>
+                <a tabindex="0" class="btn btn-md btn-dark" role="button" data-toggle="popover" data-trigger="focus"
+                    title="SAMPLE response"
+                    data-content="(define (tweet-templ tweet)
+                    (cond [(string? tweet) ...]
+                          [(image-tweet? tweet) ...]
+                          [(retweet? tweet) ...]))">Sample Response</a>
+                <p>Develop test cases for tweet->text, a function that takes a Tweet and returns whatever
+                    text is inside it.</p>
+                <textarea name="message" rows="10" cols="100"
+                    placeholder="Write your answer here first before looking at the answers!"></textarea>
+                <br>
+                <a tabindex="0" class="btn btn-md btn-dark" role="button" data-toggle="popover" data-trigger="focus"
+                    title="SAMPLE response"
+                    data-content="And here's some amazing content. It's very engaging. Right?">Sample Response</a>
+            </div>
+            <hr>
+            <div>
+                <p><strong>Problem 4</strong>. Take a look at these data defintitions:</p>
+                <pre><code style="color:orange;">; A PayRecord is a (make-record String Paycheck)</code></pre>
+                <pre><code>(define-struct record [name salary])</code></pre>
+                <pre><code style="color:orange;">; Interpretation: a record of a payment to an employee</code></pre>
+                <pre><code style="color:orange;">; A Paycheck is one of
+    ; - PositiveNumber
+    ; - (make-bonus PositiveNumber NonNegativeNumber)</code></pre>
+                <pre><code>(define-struct bonus [base-pay extra])</code></pre>
+                <pre><code style="color:orange;">; Interpretation: A paycheck is either just some number of dollars, or
+    ; includes both an employee's normal pay and some extra (both in dollars)</code></pre>
+                <p>Consider the following very badly-designed function:</p>
+                <pre><code style="color:orange;">; Returns the name of the employee with the greater paycheck
+    ; PayRecord PayRecord -> String</code></pre>
+                <pre><code>(define (max-earner emp1 emp2)
+      (if (< (record-salary emp1) (record-salary emp2))
+          (record-name emp1)
+          (record-name emp2)))</code></pre>
+                <p>Find two bugs in this function. For each one, explain what the problem is, and give a
+                    test case that does not pass (i.e., either fails or crashes) to demonstrate the problem.</p>
+                <textarea name="message" rows="10" cols="100"
+                    placeholder="Write your answer here first before looking at the answers!"></textarea>
+                <br>
+                <a tabindex="0" class="btn btn-md btn-dark" role="button" data-toggle="popover" data-trigger="focus"
+                    title="SAMPLE response"
+                    data-content="And here's some amazing content. It's very engaging. Right?">Sample Response</a>
+            </div>
+            <hr>
+            <div>
+                <p><strong>Problem 5</strong>. Here is a data definition</p>
+                <pre><code style="color:orange;">; A DogSled is one of:
+    ; - "sled"
+    ; - (make-team DogSled Number)
+    ; Interpretation: A sled pulled by a team of dogs. The numbers
+    ; represent each dog's maximum speed.</code></pre>
+                <pre><code>(define-struct team [sled speed])</code></pre>
+                <p>Design the function sled-speed. This function takes in a DogSled and returns a Number
+                    representing the fastest the sled and team can go. Assume that the sled itself can go
+                    no faster than 100 miles per hour, or it would break apart, and assume that no dog can
+                    run faster than its maximum speed. Show <strong><em><u>all</strong></em></u> steps of the design recipe,
+                    including any
+                    appropriate templates.</p>
+                <p><em>Note:</em> you may use any BSL functions dealing with numbers (number?, min, +, sqrt,
+                    abs, etc) that you may find convenient.</p>
+                <textarea name="message" rows="10" cols="100"
+                    placeholder="Write your answer here first before looking at the answers!"></textarea>
+                <br>
+                <a tabindex="0" class="btn btn-md btn-dark" role="button" data-toggle="popover" data-trigger="focus"
+                    title="SAMPLE response"
+                    data-content="And here's some amazing content. It's very engaging. Right?">Sample Response</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>&#169; 2020 Kenny Jung and Satwik Misra</p>
+        <script type="text/javascript">
+            var m = "This page was last updated on " + document.lastModified;
+            var p = m.length - 8;
+            document.writeln("<left>");
+            document.write(m.substring(p, 0));
+            document.writeln("</left>");
+          </script>
+    </div>
+    <script src="past-exams.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Class Information</title>
   <link rel="stylesheet" href="./class-info.css">
+  <link rel="stylesheet" href="./all.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -40,18 +41,18 @@
           <a class="nav-link dropdown-toggle" href="class-info.html" id="navbarDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class Information</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="class-info.html#class-description">Class Description</a>
-            <a class="dropdown-item" href="class-info.html#syllabus">Syllabus</a>
-            <a class="dropdown-item" href="class-info.html#contact-info">Contact Information</a>
-            <a class="dropdown-item" href="class-info.html#class-times-locations">Class Times/Locations</a>
-            <a class="dropdown-item" href="class-info.html#grade-breakdown">Grade Breakdown</a>
-            <a class="dropdown-item" href="class-info.html#policies">Policies</a>
+            <a class="dropdown-item btn-outline-light" href="class-info.html#class-description">Class Description</a>
+            <a class="dropdown-item btn-outline-light" href="class-info.html#syllabus">Syllabus</a>
+            <a class="dropdown-item btn-outline-light" href="class-info.html#contact-info">Contact Information</a>
+            <a class="dropdown-item btn-outline-light" href="class-info.html#class-times-locations">Class Times/Locations</a>
+            <a class="dropdown-item btn-outline-light" href="class-info.html#grade-breakdown">Grade Breakdown</a>
+            <a class="dropdown-item btn-outline-light" href="class-info.html#policies">Policies</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="meet-profs.html">Meet your professors!</a>
+            <a class="dropdown-item btn-outline-light" href="meet-profs.html">Meet your professors!</a>
           </div>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="homework.html">Homework / Labs</a>
+          <a class="nav-link" href="homework.html">Homework/Labs</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Office Hour and Lecture Links</a>
@@ -62,6 +63,12 @@
         <li class="nav-item">
           <a class="nav-link" href="important-links.html">Important Links</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="past-exams.html">Past Exams</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
       </ul>
       <!-- <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -69,174 +76,184 @@
       </form> -->
     </div>
   </nav>
-  <div id="class-description">
-    <h2> Class Description </h2>
-    <p>This class covers the basics of functional programming and program design using DrRacket.</p>
-    <p>This course is an introduction to computing and programming. Its major goal is to introduce students to the
-      principles of systematic problem solving through programming and the basic rules of computation.</p>
-    <p>By the end of the course, students will have a sense for the differences between a programmer and a well-trained
-      software developer as well as a sense of the complexities involved in developing solid software (highly useful in
-      case they ever collaborate with such professionals). In addition, they ought to be able to use the principles of
-      programming to solve many non-computational problems in a systematic manner.</p>
-    <p>The course does not assume any prior programming experience. It is therefore suitable for all students—majors and
-      non-majors alike—who wish to explore the intellectual ideas of the discipline. It does assume familiarity with
-      (high school) arithmetic and algebra, and it demands curiosity, self-discipline, and willingness to work with
-      others.</p>
-  </div>
-  <hr>
-  <div id="syllabus">
-    <h2> Syllabus </h2>
-    <iframe src="img/Syllabus.pdf" height="500" width="70%"></iframe>
-  </div>
-  <hr>
-  <div id="contact-info">
-    <h2> Professors and TAs </h2>
-    <div class="row">
-      <div class="col-lg-2 col-md-3 col-sm-6">
-        <div class="card" style="width: 11rem;">
-          <img class="card-img-top" src="https://course.ccs.neu.edu/cs2500/lerner_benjamin.png" alt="Ben Lerner">
-          <div class="card-body">
-            <h5 class="card-title">Ben Lerner</h5>
-            <p class="card-text">(Office hour time and location)</p>
-            <a href="mailto:blerner@ccs.neu.edu" class="btn btn-dark" target="_blank">Email Prof. Lerner!</a>
+  <div id="content">
+    <div id="class-description">
+      <h2> Class Description </h2>
+      <p>This class covers the basics of functional programming and program design using DrRacket.</p>
+      <p>This course is an introduction to computing and programming. Its major goal is to introduce students to the
+        principles of systematic problem solving through programming and the basic rules of computation.</p>
+      <p>By the end of the course, students will have a sense for the differences between a programmer and a well-trained
+        software developer as well as a sense of the complexities involved in developing solid software (highly useful in
+        case they ever collaborate with such professionals). In addition, they ought to be able to use the principles of
+        programming to solve many non-computational problems in a systematic manner.</p>
+      <p>The course does not assume any prior programming experience. It is therefore suitable for all students—majors and
+        non-majors alike—who wish to explore the intellectual ideas of the discipline. It does assume familiarity with
+        (high school) arithmetic and algebra, and it demands curiosity, self-discipline, and willingness to work with
+        others.</p>
+    </div>
+    <hr>
+    <div id="syllabus">
+      <h2> Syllabus </h2>
+      <iframe src="img/Syllabus.pdf" height="500" width="70%"></iframe>
+    </div>
+    <hr>
+    <div id="contact-info">
+      <h2> Professors and TAs </h2>
+      <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-6">
+          <div class="card" style="width: 11rem;">
+            <img class="card-img-top" src="https://course.ccs.neu.edu/cs2500/lerner_benjamin.png" alt="Ben Lerner">
+            <div class="card-body">
+              <h5 class="card-title">Ben Lerner</h5>
+              <p class="card-text">(Office hour time and location)</p>
+              <a href="mailto:blerner@ccs.neu.edu" class="btn btn-dark" target="_blank">Email Prof. Lerner!</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-6">
-        <div class="card" style="width: 11rem;">
-          <img class="card-img-top" src="https://course.ccs.neu.edu/cs2500/ahmed_amal.png" alt="Amal Ahmed">
-          <div class="card-body">
-            <h5 class="card-title">Amal Ahmed</h5>
-            <p class="card-text">(Office hour time and location)</p>
-            <a href="mailto:amal@ccs.neu.edu" class="btn btn-dark" target="_blank">Email Prof. Ahmed!</a>
+        <div class="col-lg-2 col-md-3 col-sm-6">
+          <div class="card" style="width: 11rem;">
+            <img class="card-img-top" src="https://course.ccs.neu.edu/cs2500/ahmed_amal.png" alt="Amal Ahmed">
+            <div class="card-body">
+              <h5 class="card-title">Amal Ahmed</h5>
+              <p class="card-text">(Office hour time and location)</p>
+              <a href="mailto:amal@ccs.neu.edu" class="btn btn-dark" target="_blank">Email Prof. Ahmed!</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-6">
-        <div class="card" style="width: 11rem;">
-          <img class="card-img-top" src="https://vesely.io/images/ferd.jpg" alt="Ferd Vesely">
-          <div class="card-body">
-            <h5 class="card-title">Ferd Vesely</h5>
-            <p class="card-text">(Office hour time and location)</p>
-            <a href="mailto:f.vesely@northeastern.edu" class="btn btn-dark" target="_blank">Email Prof. Vesely!</a>
+        <div class="col-lg-2 col-md-3 col-sm-6">
+          <div class="card" style="width: 11rem;">
+            <img class="card-img-top" src="https://vesely.io/images/ferd.jpg" alt="Ferd Vesely">
+            <div class="card-body">
+              <h5 class="card-title">Ferd Vesely</h5>
+              <p class="card-text">(Office hour time and location)</p>
+              <a href="mailto:f.vesely@northeastern.edu" class="btn btn-dark" target="_blank">Email Prof. Vesely!</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-6">
-        <div class="card" style="width: 11rem;">
-          <img class="card-img-top" src="https://course.ccs.neu.edu/cs2500/park_john.png" alt="John Park">
-          <div class="card-body">
-            <h5 class="card-title">John Park</h5>
-            <p class="card-text">(Office hour time and location)</p>
-            <a href="mailto:john.park@northeastern.edu" class="btn btn-dark" target="_blank">Email Prof. Park!</a>
+        <div class="col-lg-2 col-md-3 col-sm-6">
+          <div class="card" style="width: 11rem;">
+            <img class="card-img-top" src="https://course.ccs.neu.edu/cs2500/park_john.png" alt="John Park">
+            <div class="card-body">
+              <h5 class="card-title">John Park</h5>
+              <p class="card-text">(Office hour time and location)</p>
+              <a href="mailto:john.park@northeastern.edu" class="btn btn-dark" target="_blank">Email Prof. Park!</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-6">
-        <div class="card" style="width: 11rem;">
-          <img class="card-img-top" src="https://course.ccs.neu.edu/cs2500/guha_arjun.png" alt="Arjun Guha">
-          <div class="card-body">
-            <h5 class="card-title">Arjun Guha</h5>
-            <p class="card-text">(Office hour time and location)</p>
-            <a href="mailto:a.guha@northeastern.edu" class="btn btn-dark" target="_blank">Email Prof. Guha!</a>
+        <div class="col-lg-2 col-md-3 col-sm-6">
+          <div class="card" style="width: 11rem;">
+            <img class="card-img-top" src="https://course.ccs.neu.edu/cs2500/guha_arjun.png" alt="Arjun Guha">
+            <div class="card-body">
+              <h5 class="card-title">Arjun Guha</h5>
+              <p class="card-text">(Office hour time and location)</p>
+              <a href="mailto:a.guha@northeastern.edu" class="btn btn-dark" target="_blank">Email Prof. Guha!</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <hr>
-  <div id="class-times-locations">
-    <h2> Class Times / Locations </h2>
-    <table id="time-location-table">
-      <tr>
-        <th>Instructor</th>
-        <th>Time</th>
-        <th>Days</th>
-        <th>Location</th>
-      </tr>
-      <tr>
-        <td>Benjamin Lerner</a></td>
-        <td>09:15 AM - 10:20 AM</td>
-        <td>MWR</td>
-        <td>Shillman 105</td>
-      </tr>
-      <tr>
-        <td>Amal Ahmed</td>
-        <td>10:30 AM - 11:35 AM</td>
-        <td>MWR</td>
-        <td>Shillman 105</td>
-      </tr>
-      <tr>
-        <td>Ferdinand Vesely</td>
-        <td>10:30 AM - 11:35 AM</td>
-        <td>MWR</td>
-        <td>Shillman 135</td>
-      </tr>
-      <tr>
-        <td>John Park</td>
-        <td>01:35 PM - 02:40 PM</td>
-        <td>MWR</td>
-        <td>Shillman 105</td>
-      </tr>
-      <tr>
-        <td>Ferdinand Vesely</td>
-        <td>01:35 PM - 02:40 PM</td>
-        <td>MWR</td>
-        <td>Shillman 135</td>
-      </tr>
-      <tr>
-        <td>John Park</td>
-        <td>04:35 PM - 05:40 PM</td>
-        <td>MWR</td>
-        <td>Shillman 105</td>
-      </tr>
-      <tr>
-        <td>Arjun Guha</td>
-        <td>04:35 PM - 05:40 PM</td>
-        <td>MWR</td>
-        <td>Shillman 335</td>
-      </tr>
-    </table>
-  </div>
-  <hr>
-  <div id="grade-breakdown">
-    <h2> Grade Breakdown </h2>
-    <table id="grades">
-      <tr>
-        <th>Letter Grade</th>
-        <th>Numerical Grade</th>
-      </tr>
-      <tr>
-        <td>A</td>
-        <td>90-100</td>
-      </tr>
-      <tr>
-        <td>B</td>
-        <td>80-89</td>
-      </tr>
-      <tr>
-        <td>C</td>
-        <td>70-70</td>
-      </tr>
-      <tr>
-        <td>D</td>
-        <td>60-69</td>
-      </tr>
-      <tr>
-        <td>F</td>
-        <td>60</td>
-      </tr>
-    </table>
-  </div>
-  <hr>
-  <div id="policies">
-    <h2>Policies</h2>
-    <p>If you actually want to read about the course policies, click<a href="https://course.ccs.neu.edu/cs2500/policies.html">here</a></p>
+    <hr>
+    <div id="class-times-locations">
+      <h2> Class Times / Locations </h2>
+      <table id="time-location-table">
+        <tr>
+          <th>Instructor</th>
+          <th>Time</th>
+          <th>Days</th>
+          <th>Location</th>
+        </tr>
+        <tr>
+          <td>Benjamin Lerner</a></td>
+          <td>09:15 AM - 10:20 AM</td>
+          <td>MWR</td>
+          <td>Shillman 105</td>
+        </tr>
+        <tr>
+          <td>Amal Ahmed</td>
+          <td>10:30 AM - 11:35 AM</td>
+          <td>MWR</td>
+          <td>Shillman 105</td>
+        </tr>
+        <tr>
+          <td>Ferdinand Vesely</td>
+          <td>10:30 AM - 11:35 AM</td>
+          <td>MWR</td>
+          <td>Shillman 135</td>
+        </tr>
+        <tr>
+          <td>John Park</td>
+          <td>01:35 PM - 02:40 PM</td>
+          <td>MWR</td>
+          <td>Shillman 105</td>
+        </tr>
+        <tr>
+          <td>Ferdinand Vesely</td>
+          <td>01:35 PM - 02:40 PM</td>
+          <td>MWR</td>
+          <td>Shillman 135</td>
+        </tr>
+        <tr>
+          <td>John Park</td>
+          <td>04:35 PM - 05:40 PM</td>
+          <td>MWR</td>
+          <td>Shillman 105</td>
+        </tr>
+        <tr>
+          <td>Arjun Guha</td>
+          <td>04:35 PM - 05:40 PM</td>
+          <td>MWR</td>
+          <td>Shillman 335</td>
+        </tr>
+      </table>
+    </div>
+    <hr>
+    <div id="grade-breakdown">
+      <h2> Grade Breakdown </h2>
+      <table id="grades">
+        <tr>
+          <th>Letter Grade</th>
+          <th>Numerical Grade</th>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>90-100</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>80-89</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>70-70</td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>60-69</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>60</td>
+        </tr>
+      </table>
+    </div>
+    <hr>
+    <div id="policies">
+      <h2>Policies</h2>
+      <p>If you actually want to read about the course policies, click <a href="https://course.ccs.neu.edu/cs2500/policies.html">here</a></p>
+    </div>
+    <button onclick="topFunction()" id="scrollTop" title="Go to top">Top</button>
   </div>
   <div id="footer">
     <p>&#169; 2020 Kenny Jung and Satwik Misra</p>
-    <p>This page was last updated on 11/10/2020</p>
+    <script type="text/javascript">
+      var m = "This page was last updated on " + document.lastModified;
+      var p = m.length - 8;
+      document.writeln("<left>");
+      document.write(m.substring(p, 0));
+      document.writeln("</left>");
+    </script>
   </div>
+  <script src="all.js" charset="utf-8"></script>
 </body>
 
 </html>
